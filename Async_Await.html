@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        
+        let age=Symbol();
+        let user={
+            name:'yahho baba',
+            class:'bTech',
+            [age]:25
+        };
+        console.log(user);
+
+        //let id=Symbol("hello");
+        //console.log(id);
+        //console.log(id.description);
+
+
+      /* 
+        ///async method ///
+      let test=async()=> "hello";
+    
+           test().then((result)=>{
+            console.log(result);
+           }).catch(()=>{
+            console.log("error");
+           });
+           
+        //// writing style ////
+           async function test(){
+            console.log("2. message");
+            const response =await fetch("contend/json/student.json");
+            console.log("3 message");
+            const student= await response.json();
+           
+            return student;
+
+           }
+           console.log("1. message");
+           let a=test();
+           console.log("4. message");
+           console.log("5. message");
+           console.log(a);
+           
+/// another style of writing  ////
+           async function test(){
+               const response=await fetch("con1tend/json/student.json");
+               const student=await response.json();
+
+               return student;
+           }
+           
+          async function test()
+          {
+            return (await fetch("contend/json/student.json")).json();
+          }
+
+           test().then((res)=>{
+            console.log(res);
+           }).catch((err)=>{
+               console.log(err);
+           });
+           */
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

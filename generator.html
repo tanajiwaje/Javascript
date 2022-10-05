@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+     //   function *generator(){
+      ////     console.log("this is first message");
+      ////     yield "this yeild first";
+      ///     console.log("this is second messge");
+      //     yield "this yeild second";
+
+     //   }
+     //   let ge=generator();
+     //   console.log(ge.next());
+      //  console.log(ge.next());
+
+      function *generator()
+      {
+        let nextNum=300;
+        while(true){
+            yield(nextNum++);
+        }
+      }
+
+      let g=generator();
+      
+      for(let value of g)
+      {
+        if(value >6077) break;
+        console.log(value);
+      }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function numberIterator(arr)
+        {
+           var nextNum=0;
+           return {
+            myfun()
+            {
+                if(nextNum<arr.length){
+                    return{
+                        value:arr[nextNum++],
+                        done:false
+                    }
+                }
+                else
+                {
+                    return {
+                        done:true                    }
+                }
+
+                
+            }
+           }
+        }
+        let a=['c','c++','java','javascript','css','bootstrap','jQuery'];
+
+        let number=[100,200,300,500];
+
+        let num=numberIterator(number);
+        console.log(num.myfun());
+
+        //for loop
+       /* for(var i=0;i<a.length;i++)
+        {
+            document.write(a[i]+"   ");
+        }
+        */
+       
+        //for each loop
+      /* for(let values of a)
+       {
+        document.write(values);
+       }
+       */
+      
+
+       /*
+       let iter =a[Symbol.iterator]();
+       let result=iter.next();
+
+       while(!result.done){
+        console.log(result.value);
+        result=iter.next();
+       }
+
+      */
+
+//      let str="yahho baba";
+ //     for(let char of str)
+  //    {
+   //     console.log(char);
+    //  }
+
+      //let iter=str[Symbol.iterator]();
+
+    //  let result=iter.next();
+
+      //while(!result.done)
+      //{
+       // console.log(result.value);
+        //result=iter.next();
+      //}
+       
+        
+       
+    </script>
+    
+</body>
+</html>
